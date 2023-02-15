@@ -1,9 +1,15 @@
 import React from 'react';
-import { HeaderComponent } from './styled';
+import { Container, Content } from './styled';
+import { SiXdadevelopers } from 'react-icons/si';
+import { Menu } from './components/Menu/Menu';
 export function Header() {
   return (
-    <HeaderComponent>
-      <h1>teste</h1>
-    </HeaderComponent>
+    <Container>
+      <Content>
+        <SiXdadevelopers size="20" />
+        <h1>Guilherme Santos</h1>
+        <Menu />
+      </Content>
+    </Container>
   );
 }
