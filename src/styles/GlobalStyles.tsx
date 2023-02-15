@@ -8,8 +8,9 @@ padding: 0;
 margin: 0;
 box-sizing: border-box;
 list-style: none;
-font-family: 'Lato', sans-serif;
+font-family: 'Roboto', sans-serif;
 color:white;
+font-weight: 500;
 }
 body{    
 background-color:black; 
