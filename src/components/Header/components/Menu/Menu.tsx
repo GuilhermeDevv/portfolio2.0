@@ -27,6 +27,7 @@ export function Menu() {
           <SlMenu
             size="25"
             display={changeMenu === 'close' ? 'block' : 'none'}
+            
           />
           <SlClose
             size="25"
