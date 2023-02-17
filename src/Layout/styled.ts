@@ -11,7 +11,8 @@ export const Content = styled.div`
 export const PageSwitch = styled.section`
   width: 100%;
   min-height: calc(100vh - 60px);
+
   z-index: -1;
   position: relative;
-  padding: 0px 4.5rem;
+  padding: 4rem 6rem;
 `;
