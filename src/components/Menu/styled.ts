@@ -1,10 +1,5 @@
 import styled from 'styled-components';
 
-interface StyledMenuProps {
-  displayMenu: string;
-  effect: string;
-}
-
 export const Container = styled.div`
   position: fixed;
   bottom: 20px;
