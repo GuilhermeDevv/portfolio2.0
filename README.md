@@ -12,6 +12,7 @@ Este é meu portfólio criado para apresentar as habilidades que tenho no desenv
 - Javascript
 - Typescript
 - Styled-Components
+- React Router
 - React Hook Form
 - React Icons
 
