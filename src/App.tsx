@@ -1,9 +1,11 @@
-import { Home } from './pages/home/Home';
+import { RoutePage } from './routes/Routes';
+import { GlobalStyle } from './styles/GlobalStyles';
 
 export function App() {
   return (
     <>
-      <Home />
+      <GlobalStyle />
+      <RoutePage />
     </>
   );
 }
