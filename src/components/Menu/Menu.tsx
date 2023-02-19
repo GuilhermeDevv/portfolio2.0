@@ -1,33 +1,27 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Container, Content, Options } from './styled';
 import { IoMdHome, IoMdPerson } from 'react-icons/io';
 import { FaToolbox } from 'react-icons/fa';
-
+import { NavLink } from 'react-router-dom';
 export function Menu() {
-  const [changeMenu, setChangeMenu] = useState('close');
-  const [action, setAction] = useState('');
-
-  function renderedMenuMobile() {
-    if (changeMenu == 'close') {
-      setChangeMenu('open');
-      setAction('smoothMenu');
-    } else {
-      setChangeMenu('close');
-      setAction('smoothMenuClose');
-    }
-  }
   return (
     <Container>
       <Content>
-        <Options title="Home">
-          <IoMdHome size="20" />
-        </Options>
-        <Options title="About">
-          <IoMdPerson size="20" />
-        </Options>
-        <Options title="Project">
-          <FaToolbox size="20" />
-        </Options>
+        <NavLink to="/">
+          <Options title="Home">
+            <IoMdHome size="20" />
+          </Options>
+        </NavLink>
+        <NavLink to="/about">
+          <Options title="About">
+            <IoMdPerson size="20" />
+          </Options>
+        </NavLink>
+        <NavLink to="/projects">
+          <Options title="Projects">
+            <FaToolbox size="20" />
+          </Options>
+        </NavLink>
       </Content>
     </Container>
   );
