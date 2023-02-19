@@ -1,6 +1,5 @@
 import React from 'react';
 import { Container, Content, Logo, ButtonCv } from './styled';
-import { SiXdadevelopers } from 'react-icons/si';
 
 export function Header() {
   return (
