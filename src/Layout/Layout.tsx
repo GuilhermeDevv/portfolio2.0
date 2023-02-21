@@ -8,7 +8,6 @@ export function Layout({ children }: { children: ReactNode }) {
   return (
     <Content>
       <Header />
-      <Network />
       <PageSwitch>{children}</PageSwitch>
       <Menu />
     </Content>
