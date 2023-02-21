@@ -7,13 +7,13 @@ export function Network() {
     <Container>
       <Content>
         <span>
-          <IoLogoLinkedin size="20" />
+          <IoLogoLinkedin size="25" />
         </span>
         <span>
-          <IoLogoWhatsapp size="20" />
+          <IoLogoWhatsapp size="25" />
         </span>
         <span>
-          <IoLogoGithub size="20" />
+          <IoLogoGithub size="25" />
         </span>
       </Content>
     </Container>
