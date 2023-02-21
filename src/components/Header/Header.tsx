@@ -1,5 +1,6 @@
 import React from 'react';
-import { Container, Content, Logo, ButtonCv } from './styled';
+import { Button } from '../Button/Button';
+import { Container, Content, Logo } from './styled';
 
 export function Header() {
   return (
@@ -9,7 +10,7 @@ export function Header() {
           <span>Guilherme</span>
           <span>Santos</span>
         </Logo>
-        <ButtonCv>Download CV</ButtonCv>
+        <Button link="" text="Download CV" />
       </Content>
     </Container>
   );
