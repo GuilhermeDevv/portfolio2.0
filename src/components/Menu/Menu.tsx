@@ -3,6 +3,7 @@ import { Container, Content, Options } from './styled';
 import { IoMdHome, IoMdPerson, IoMdChatboxes } from 'react-icons/io';
 import { FaToolbox } from 'react-icons/fa';
 import { NavLink } from 'react-router-dom';
+
 export function Menu() {
   return (
     <Container>
