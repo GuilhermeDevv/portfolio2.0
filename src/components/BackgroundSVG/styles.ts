@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Self = styled.img`
-  width: 550px;
+  width: 450px;
   position: relative;
   animation: BackgroundTransition 1s ease-in forwards;
 
