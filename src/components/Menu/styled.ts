@@ -27,9 +27,9 @@ export const Content = styled.div`
   }
   & a.active {
     background-color: #f2f2f2;
-
-    & path {
-      color: black;
+    & svg,
+    path {
+      color: rgb(0, 0, 0);
     }
   }
 `;
