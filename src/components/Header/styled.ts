@@ -24,20 +24,3 @@ export const Logo = styled.div`
     color: white;
   }
 `;
-export const ButtonCv = styled.button`
-  background-color: grey;
-  border-radius: 29px;
-  border: 1px solid grey;
-  color: white;
-  font-size: 15px;
-  padding: 10px 25px;
-  cursor: pointer;
-  transition: 0.3s;
-
-  &:hover {
-    background-color: white;
-    color: black;
-    border-color: black;
-    transition: 0.3s;
-  }
-`;
