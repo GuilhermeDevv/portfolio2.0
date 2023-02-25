@@ -1,5 +1,5 @@
 import React from 'react';
-import imgTest from '../../../public/teste.webp';
+import imgTest from '../../../public/teste.jpg';
 import { Button } from '../Button/Button';
 import {
   Container,
