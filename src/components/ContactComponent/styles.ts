@@ -185,6 +185,7 @@ export const Input = styled.input`
   display: block;
   background-color: transparent;
   font-size: 16px;
+  width: 230px;
   padding: 10px 40px 10px 8px;
   border: 1px solid white;
   border-radius: 10px;
@@ -200,7 +201,7 @@ export const Input = styled.input`
 export const InputMessage = styled.textarea`
   padding: 0px;
   width: 230px;
-  height: 170px;
+  height: 140px;
   display: block;
   background-color: transparent;
   font-size: 16px;
@@ -223,6 +224,8 @@ export const InputMessage = styled.textarea`
 export const InputSubmit = styled.input`
   background-color: grey;
   padding: 10px 20px;
+  width: 110px;
+  height: 40px;
   border-radius: 10px;
   position: absolute;
   left: 0px;
