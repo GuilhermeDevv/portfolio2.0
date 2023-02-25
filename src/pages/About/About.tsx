@@ -5,6 +5,7 @@ export function About() {
   return (
     <>
       <AboutComponent />
+      
     </>
   );
 }
