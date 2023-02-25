@@ -17,3 +17,10 @@ export const PageSwitch = styled.section`
     padding: 4rem 0rem;
   }
 `;
+
+export const Version = styled.h1`
+  position: fixed;
+  left: 10px;
+  bottom: 30px;
+  background-color: black;
+`;
