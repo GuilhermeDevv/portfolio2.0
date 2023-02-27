@@ -2,8 +2,8 @@ import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyle = createGlobalStyle`
 
-*{
 
+*{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -14,11 +14,9 @@ export const GlobalStyle = createGlobalStyle`
   text-decoration-line: none;
 }
 body{    
-
-  background-color: black;
-
+  transition: all 0.6s;
+  background-color:${({ theme }) => theme.colors.background}
 }
-
 html{
 font-size:62.5%;
 
