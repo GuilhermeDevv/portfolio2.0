@@ -29,11 +29,12 @@ export const ImWhat = styled.div`
   left: -110px;
   text-align: start;
   line-height: 50px;
-  animation: ImWhatTransition 1s ease-in forwards;
+  animation: ImWhatTransition 2000ms ease-out forwards;
   & h1 {
     font-size: 5.125rem;
     text-transform: uppercase;
     font-weight: bold;
+    color: ${({ theme }) => theme.colors.text};
     @media (max-width: 720px) {
       font-size: 3.125rem;
       left: 0px;
@@ -44,6 +45,7 @@ export const ImWhat = styled.div`
     text-transform: uppercase;
     font-weight: bold;
     font-size: 20px;
+    color: ${({ theme }) => theme.colors.backgroundButton};
     @media (max-width: 720px) {
       font-size: 16px;
     }
@@ -52,10 +54,11 @@ export const ImWhat = styled.div`
     @keyframes ImWhatTransition {
       0% {
         opacity: 0;
-        top: -120px;
+        transform: translateY(-120px);
       }
       100% {
-        top: 0px;
+        opacity: 1;
+        transform: translateY(0px);
       }
     }
 
@@ -67,10 +70,11 @@ export const ImWhat = styled.div`
     @keyframes ImWhatTransition {
       0% {
         opacity: 0;
-        bottom: -120px;
+        transform: translateY(-120px);
       }
       100% {
-        bottom: 0px;
+        opacity: 1;
+        transform: translateY(0px);
       }
     }
   }
