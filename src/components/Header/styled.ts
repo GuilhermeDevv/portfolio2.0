@@ -16,11 +16,14 @@ export const Logo = styled.div`
     font-size: 22px;
   }
   & span:first-child {
-    background: -webkit-linear-gradient(#eee, #333);
+    background: -webkit-linear-gradient(
+      ${({ theme }) => theme.colors.backgroundButton},
+      ${({ theme }) => theme.colors.backgroundActive}
+    );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
   & span:last-child {
-    color: white;
+    color: ${({ theme }) => theme.colors.text};
   }
 `;

@@ -16,7 +16,7 @@ export const Content = styled.div`
   padding: 0px 40px;
   display: flex;
   gap: 20px;
-  background-color: rgba(128, 128, 128, 0.07);
+
   border-radius: 10px;
 
   & a {
@@ -25,11 +25,15 @@ export const Content = styled.div`
     display: flex;
     border-radius: 50%;
   }
+  & svg,
+  path {
+    color: ${({ theme }) => theme.colors.textInativity};
+  }
   & a.active {
-    background-color: #f2f2f2;
+    background-color: ${({ theme }) => theme.colors.backgroundActive};
     & svg,
     path {
-      color: rgb(0, 0, 0);
+      color: ${({ theme }) => theme.colors.textActive};
     }
   }
 `;
@@ -43,6 +47,5 @@ export const Options = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #555;
   transition: background-color 0.2s;
 `;
