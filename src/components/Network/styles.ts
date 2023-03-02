@@ -14,10 +14,12 @@ export const Content = styled.div`
     display: flex;
     padding: 1px;
     border-radius: 5px;
-    transition: all 1s linear;
     opacity: 0;
-    background-color: rgba(128, 128, 128, 0.33);
     animation: NetworkTransition 1s forwards;
+    & svg,
+    path {
+      color: ${({ theme }) => theme.colors.backgroundButton};
+    }
   }
   & span:nth-child(2) {
     animation-delay: 0.5s;
