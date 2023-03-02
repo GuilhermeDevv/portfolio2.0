@@ -22,7 +22,8 @@ export const Info = styled.div`
   max-height: 230px;
   width: 100%;
   height: 100%;
-  padding: 20px;
+  padding-bottom: 20px;
+  padding-left: 2px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -39,9 +40,14 @@ export const Info = styled.div`
     font-weight: bold;
     text-transform: uppercase;
     max-width: 60%;
+    color: ${({ theme }) => theme.colors.primary};
   }
   & span {
     font-size: 12px;
+    color: ${({ theme }) => theme.colors.secondary};
+  }
+  & button {
+    max-width: 100px;
   }
 
   @media (max-width: 920px) {
@@ -59,8 +65,8 @@ export const Info = styled.div`
   }
 `;
 export const Project = styled.div`
-  border-radius: 5px;
-  border: solid 2px white;
+  border: solid 2px transparent;
+  border-radius: 8px;
   display: flex;
   position: relative;
   justify-content: center;
@@ -151,10 +157,10 @@ export const ProjectInformation = styled.div`
   }
 `;
 export const Stack = styled.span`
-  color: #b3b3b3;
+  color: ${({ theme }) => theme.colors.primary};
   font-size: 16px;
 `;
 export const NameProject = styled.span`
-  color: #f2f2f2;
+  color: ${({ theme }) => theme.colors.secondary};
   font-size: 22px;
 `;
