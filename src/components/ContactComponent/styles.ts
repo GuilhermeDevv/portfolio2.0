@@ -10,19 +10,21 @@ export const Content = styled.div`
   align-items: center;
 
   & h1 {
-    position: relative;
-    padding-bottom: 70px;
+    text-align: center;
     font-size: 22px;
-    color: white;
+    width: 100vw;
+    background-color: ${({ theme }) => theme.colors.background};
+    z-index: 2;
+    color: ${({ theme }) => theme.colors.text};
     font-weight: bolder;
     text-transform: uppercase;
-    @media (max-width: 768px) {
-      padding-bottom: 30px;
-    }
+    margin-bottom: 15px;
   }
 `;
 export const ContactMe = styled.div`
   display: flex;
+  width: 80%;
+  justify-content: center;
   gap: 100px;
   @media (max-width: 767px) {
     flex-direction: column;
@@ -51,10 +53,11 @@ export const GoTo = styled.div`
   }
 `;
 export const InfoTalk = styled.div`
-  background-color: #404143;
+  background-color: ${({ theme }) => theme.colors.secondary};
   position: relative;
   padding-top: 10px;
-  width: 200px;
+  margin-bottom: 20px;
+  width: 250px;
   height: 100px;
   display: flex;
   flex-direction: column;
@@ -62,6 +65,10 @@ export const InfoTalk = styled.div`
   border-radius: 10px;
   gap: 5px;
   animation: InfoTalkTransition forwards;
+  & & svg,
+  path {
+    color: ${({ theme }) => theme.colors.backgroundButton};
+  }
   @media (max-width: 767px) {
     @keyframes InfoTalkTransition {
       from {
@@ -98,16 +105,19 @@ export const InfoTalk = styled.div`
   }
   @media (max-width: 768px) {
     width: 120px;
+    height: 100px;
   }
   @media (max-width: 360px) {
     width: 100px;
+    height: 100px;
   }
 
   & label {
-    color: white;
+    color: ${({ theme }) => theme.colors.text};
+    font-size: 14px;
   }
   & span {
-    color: grey;
+    color: ${({ theme }) => theme.colors.primary};
     word-break: break-all;
   }
 `;
@@ -116,17 +126,16 @@ export const LinkContact = styled.a`
   font-size: 11px;
   position: absolute;
   bottom: 8px;
-  color: #d3d3d3;
   display: flex;
   align-items: center;
   gap: 3px;
-  &:hover {
-    color: blue;
-  }
+
+  color: ${({ theme }) => theme.colors.backgroundActive};
 `;
 export const Form = styled.form`
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   gap: 10px;
 
@@ -172,7 +181,7 @@ export const Form = styled.form`
   & h4 {
     position: relative;
     font-size: 15px;
-    color: white;
+    color: ${({ theme }) => theme.colors.text};
     font-weight: bolder;
     text-transform: uppercase;
     padding-bottom: 10px;
@@ -185,50 +194,52 @@ export const Input = styled.input`
   display: block;
   background-color: transparent;
   font-size: 16px;
-  width: 230px;
+  width: 280px;
   padding: 10px 40px 10px 8px;
-  border: 1px solid white;
+  border: 1px solid ${({ theme }) => theme.colors.text};
   border-radius: 10px;
 
   &:focus,
   &:valid {
     & ~ label {
-      color: white;
+      color: ${({ theme }) => theme.colors.text};
+      outline: none;
       transform: translateY(-21px);
     }
   }
 `;
 export const InputMessage = styled.textarea`
   padding: 0px;
-  width: 230px;
+  width: 280px;
   height: 140px;
   display: block;
   background-color: transparent;
+  outline: none;
   font-size: 16px;
   padding: 10px 40px 10px 8px;
-  border: 1px solid white;
+  border: 1px solid ${({ theme }) => theme.colors.text};
   border-radius: 10px;
   resize: none;
-  animation: FormTransition forwards 1s;
-  &:focus {
-    outline: none;
-  }
+  animation: FormTransition forwards 2s;
+
   &:focus,
   &:valid {
+    outline: none;
     & ~ label {
-      color: white;
+      color: ${({ theme }) => theme.colors.text};
       transform: translateY(-21px);
     }
   }
 `;
 export const InputSubmit = styled.input`
-  background-color: grey;
+  background-color: ${({ theme }) => theme.colors.backgroundButton};
+  border: none;
+  color: ${({ theme }) => theme.colors.destaque};
   padding: 10px 20px;
   width: 110px;
   height: 40px;
   border-radius: 10px;
   position: absolute;
-  left: 0px;
   animation: submit 3s forwards;
   transition: all 0.3s;
   opacity: 1;
@@ -240,14 +251,12 @@ export const InputSubmit = styled.input`
       }
       to {
         transform: translateX(0%);
-        opacity: 1;
       }
     }
   }
   @media (max-width: 767px) {
     @keyframes submit {
       from {
-        opacity: 0;
         transform: translateY(100%);
       }
       to {
@@ -262,8 +271,8 @@ export const Label = styled.label`
   top: 12px;
   left: 10px;
   font-size: 12px;
-  color: grey;
-  background-color: black;
+  color: ${({ theme }) => theme.colors.text};
+  background-color: ${({ theme }) => theme.colors.background};
   transition: all 0.2s;
   pointer-events: none;
 `;
