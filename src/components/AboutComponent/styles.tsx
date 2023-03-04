@@ -7,25 +7,18 @@ export const Container = styled.div`
 export const Content = styled.div`
   display: flex;
   height: 100%;
-  padding-top: 50px;
   width: 100%;
-  @media (max-width: 960px) {
-    padding-top: 0px;
-  }
 `;
-export const Text = styled.span`
-  position: relative;
-  left: -60px;
-  padding-bottom: 70px;
+export const Text = styled.h1`
+  text-align: center;
   font-size: 22px;
-  color: white;
+  width: 100vw;
+  background-color: ${({ theme }) => theme.colors.background};
+  z-index: 2;
+  color: ${({ theme }) => theme.colors.text};
   font-weight: bolder;
   text-transform: uppercase;
-  @media (max-width: 960px) {
-    left: 0px;
-    top: -15px;
-    padding: 0px;
-  }
+  margin-bottom: 15px;
 `;
 export const MoreInfo = styled.div`
   display: flex;
@@ -35,13 +28,10 @@ export const MoreInfo = styled.div`
   position: relative;
   min-width: 100%;
 
-  & h1 {
-    text-transform: capitalize;
-    font-size: 22px;
-  }
   & p {
     font-size: 14px;
-    color: #404143;
+    color: ${({ theme }) => theme.colors.text};
+    background-color: ${({ theme }) => theme.colors.background};
     text-transform: capitalize;
     text-align: start;
     width: 100%;
@@ -76,13 +66,51 @@ export const MoreInfo = styled.div`
 export const Background = styled.div`
   width: 300px;
   height: 300px;
-  background-color: grey;
 
   border-radius: 10px;
+
+  display: flex;
+  transform: scale(1);
+  flex-direction: column;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  min-width: 230px;
+  min-height: 216px;
+  transition: all 0.2s ease 0s;
+  position: relative;
+  overflow: hidden;
+  &::before {
+    content: '';
+    position: absolute;
+    width: 150px;
+    height: 150%;
+    border-radius: 10px;
+    background: linear-gradient(
+      ${({ theme }) => theme.colors.backgroundButton} 48%,
+      rgba(0, 0, 0, 0) 11%
+    );
+    animation: 6s linear 0s infinite normal none running animateColor;
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    background-color: ${({ theme }) => theme.colors.secondary};
+    border-radius: 10px;
+    inset: 2px;
+  }
+  @keyframes animateColor {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
   @media (max-width: 920px) {
     width: 250px;
     height: 250px;
-    background-color: grey;
   }
 `;
 export const InfoSeparator = styled.div`
@@ -133,7 +161,7 @@ export const ContentCard = styled.div`
 `;
 export const Card = styled.div`
   opacity: 0;
-  background-color: #404143;
+  background-color: ${({ theme }) => theme.colors.secondary};
   position: relative;
   text-transform: uppercase;
   font-size: 22px;
@@ -142,27 +170,49 @@ export const Card = styled.div`
   align-items: center;
   gap: 10px;
   padding: 10px;
-  color: black;
   border-radius: 8px;
-  height: 120px;
-  width: 150px;
-  @media (max-width: 920px) {
-    max-width: 150px;
-    height: 150px;
+  width: 200px;
+  height: 150px;
+  & svg,
+  path {
+    color: ${({ theme }) => theme.colors.backgroundButton};
   }
-  @media (max-width: 765px) {
+  @media (max-width: 920px) {
+    max-width: 200px;
+  }
+  @media (max-width: 428px) {
+    max-width: 132px;
+    height: 100px;
+  }
+  @media (max-width: 414px) {
+    max-width: 130px;
+    height: 100px;
+  }
+  @media (max-width: 393px) {
     max-width: 120px;
     height: 100px;
   }
-
-  & strong {
-    font-size: 10px;
-    color: #808080;
+  @media (max-width: 375px) {
+    max-width: 114px;
+    height: 100px;
+  }
+  @media (max-width: 320px) {
+    width: 95px;
+    height: 95px;
+    & svg,
+    path {
+      display: none;
+    }
   }
 
   & h6 {
+    color: ${({ theme }) => theme.colors.text};
     font-size: 13px;
     cursor: pointer;
     margin-bottom: 2px;
+  }
+  & strong {
+    font-size: 10px;
+    color: ${({ theme }) => theme.colors.primary};
   }
 `;
