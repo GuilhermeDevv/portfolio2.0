@@ -21,9 +21,8 @@ export function ContactComponent() {
   return (
     <Container>
       <Content>
-        <div>
-          <h1>Contate-me</h1>
-        </div>
+        <h1>Contate-me</h1>
+
         <ContactMe>
           <GoTo>
             <h4>Entre em contato</h4>
@@ -32,7 +31,7 @@ export function ContactComponent() {
               <label>Email</label>
               <span>glzin3006@gmail.com</span>
               <LinkContact href="#">
-                IR <AiOutlineArrowRight size={12} color="#d3d3d3" />
+                IR <AiOutlineArrowRight size={12} />
               </LinkContact>
             </InfoTalk>
             <InfoTalk>
@@ -40,7 +39,7 @@ export function ContactComponent() {
               <label>Whatsapp</label>
               <span>(21) 99913-2806</span>
               <LinkContact href="#">
-                IR <AiOutlineArrowRight size={12} color="#d3d3d3" />
+                IR <AiOutlineArrowRight size={12} />
               </LinkContact>
             </InfoTalk>
             <InfoTalk>
@@ -48,13 +47,12 @@ export function ContactComponent() {
               <label>Instagram</label>
               <span>@guidev_onn</span>
               <LinkContact href="#">
-                IR <AiOutlineArrowRight size={12} color="#d3d3d3" />
+                IR <AiOutlineArrowRight size={12} />
               </LinkContact>
             </InfoTalk>
           </GoTo>
           <Form action="">
             <h4>Contato rápido</h4>
-
             <div>
               <Input type="text" id="input-field" required autoComplete="off" />
               <Label htmlFor="input-field">Nome</Label>
