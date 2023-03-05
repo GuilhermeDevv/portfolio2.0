@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Self } from './styles';
 type Prop = {
   src: string;
@@ -6,5 +6,11 @@ type Prop = {
 };
 
 export function BackgroundSVG({ src, alt }: Prop) {
-  return <Self src={src} alt={alt} />;
+  useEffect(() => {
+    setInterval(() => {
+      setName('mexer');
+    }, 2000);
+  }, []);
+  const [name, setName] = useState('BackgroundTransition');
+  return <Self src={src} alt={alt} animation={name} />;
 }
