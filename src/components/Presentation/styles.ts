@@ -4,6 +4,7 @@ export const Container = styled.div`
   height: 100%;
 `;
 export const Content = styled.div`
+  overflow: hidden;
   display: flex;
   align-items: center;
   margin-left: 5%;
