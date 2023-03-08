@@ -19,6 +19,6 @@ export const ButtonComponent = styled.button`
   }
 
   &:hover {
-    transform: scale(1.01);
+    scale: 1.05;
   }
 `;
