@@ -18,10 +18,10 @@ declare module 'styled-components' {
 
 export const Black: DefaultTheme = {
   colors: {
-    primary: '#c5c8d4',
-    secondary: '#808080',
+    primary: '#a5f3fc',
+    secondary: '#164e63',
     background: '#20232f',
-    text: '#ffffff',
+    text: '#ecfeff',
     destaque: '#000',
     backgroundButton: '#02ecff',
     textButton: '#99ccff',
