@@ -5,7 +5,7 @@ interface ImageProps {
   animation: string; // Definindo a interface da propriedade "animation"
 }
 export const Self = styled.img<ImageProps>`
-  width: 450px;
+  width: 550px;
   position: relative;
   animation: ${({ animation }) => animation} 2000ms ease-out;
   animation-fill-mode: ${({ animation }) =>
