@@ -6,7 +6,7 @@ export const Container = styled.div`
 `;
 export const Content = styled.div`
   display: flex;
-  height: 100%;
+  height: 100vh;
   width: 100%;
 `;
 export const Text = styled.h1`
@@ -212,7 +212,7 @@ export const Card = styled.div`
     margin-bottom: 2px;
   }
   & strong {
-    font-size: 10px;
+    font-size: 11px;
     color: ${({ theme }) => theme.colors.primary};
   }
 `;
