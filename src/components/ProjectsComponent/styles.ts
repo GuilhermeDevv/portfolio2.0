@@ -6,14 +6,16 @@ export const Container = styled.div`
 `;
 export const Content = styled.div`
   display: flex;
+
   padding-top: 20px;
   flex-wrap: wrap;
   justify-content: center;
   align-content: flex-start;
-  height: 100%;
+  min-height: 100vh;
   width: 100%;
   gap: 10px;
   @media (min-width: 920px) {
+    min-height: 130vh;
     overflow: hidden;
   }
 `;
@@ -40,11 +42,11 @@ export const Info = styled.div`
     font-weight: bold;
     text-transform: uppercase;
     max-width: 60%;
-    color: ${({ theme }) => theme.colors.primary};
+    color: ${({ theme }) => theme.colors.text};
   }
   & span {
     font-size: 12px;
-    color: ${({ theme }) => theme.colors.secondary};
+    color: ${({ theme }) => theme.colors.primary};
   }
   & button {
     max-width: 100px;
