@@ -32,7 +32,10 @@ export const ImWhat = styled.div`
   line-height: 50px;
   animation: ImWhatTransition 2000ms ease-out forwards;
   & h1 {
-    font-size: 5.125rem;
+    position: relative;
+    //alinhar h1 com span
+    left: -4px;
+    font-size: 70px;
     text-transform: uppercase;
     font-weight: bold;
     color: ${({ theme }) => theme.colors.text};
@@ -45,7 +48,7 @@ export const ImWhat = styled.div`
     letter-spacing: 15px;
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 35px;
     color: ${({ theme }) => theme.colors.backgroundButton};
     @media (max-width: 720px) {
       font-size: 16px;
