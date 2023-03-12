@@ -10,7 +10,7 @@ export function Presentation() {
         <BackgroundSVG src={background} />
         <ImWhat>
           <h1>Desenvolvedor</h1>
-          <span>Fullstack</span>
+          <h3>Fullstack</h3>
         </ImWhat>
       </Content>
     </Container>
