@@ -6,17 +6,20 @@ export const Container = styled.div`
 `;
 export const Content = styled.div`
   display: flex;
-
-  padding-top: 20px;
+  position: relative;
+  top: 80px;
   flex-wrap: wrap;
   justify-content: center;
   align-content: flex-start;
-  min-height: 100vh;
+  min-height: calc(100% - 80px);
   width: 100%;
   gap: 10px;
   @media (min-width: 920px) {
-    min-height: 130vh;
     overflow: hidden;
+  }
+  @media (max-width: 920px) {
+    min-height: 130vh;
+    top: 20px;
   }
 `;
 export const Info = styled.div`
@@ -43,6 +46,9 @@ export const Info = styled.div`
     text-transform: uppercase;
     max-width: 60%;
     color: ${({ theme }) => theme.colors.text};
+    @media (min-width: 428px) {
+      font-size: 29px;
+    }
   }
   & span {
     font-size: 12px;
