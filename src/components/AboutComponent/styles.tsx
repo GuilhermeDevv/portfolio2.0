@@ -6,8 +6,14 @@ export const Container = styled.div`
 `;
 export const Content = styled.div`
   display: flex;
-  height: 100vh;
+  height: 100%;
   width: 100%;
+  @media (max-width: 375px) {
+    height: calc(100vh);
+  }
+  @media (max-width: 320px) {
+    height: calc(100vh + 80px);
+  }
 `;
 export const Text = styled.h1`
   text-align: center;
@@ -172,10 +178,26 @@ export const Card = styled.div`
   padding: 10px;
   border-radius: 8px;
   width: 200px;
-  height: 150px;
+  height: 130px;
+
+  @media (max-width: 430px) {
+    min-height: 110px;
+  }
+  @media (max-width: 320px) {
+    min-height: 120px;
+  }
   & svg,
   path {
+    min-height: 30px;
     color: ${({ theme }) => theme.colors.backgroundButton};
+    & {
+      @media (max-width: 390px) {
+        min-height: 25px;
+      }
+      @media (max-width: 320px) {
+        min-height: 2px;
+      }
+    }
   }
   @media (max-width: 920px) {
     max-width: 200px;
@@ -199,10 +221,6 @@ export const Card = styled.div`
   @media (max-width: 320px) {
     width: 95px;
     height: 95px;
-    & svg,
-    path {
-      display: none;
-    }
   }
 
   & h6 {
