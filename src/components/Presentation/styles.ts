@@ -30,8 +30,8 @@ export const ImWhat = styled.div`
   left: -110px;
   text-align: start;
   line-height: 50px;
-  animation: ImWhatTransition 2000ms ease-out forwards;
   & h1 {
+    animation: ImWhatTransition 1500ms ease-out forwards;
     position: relative;
     //alinhar h1 com span
     left: -4px;
@@ -44,7 +44,8 @@ export const ImWhat = styled.div`
       left: 0px;
     }
   }
-  & span {
+  & h3 {
+    animation: ImWhatTransition 1000ms ease-out forwards;
     letter-spacing: 15px;
     text-transform: uppercase;
     font-weight: bold;
