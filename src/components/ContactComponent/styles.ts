@@ -26,10 +26,13 @@ export const ContactMe = styled.div`
   width: 80%;
   justify-content: center;
   gap: 100px;
+  position: relative;
+  top: 50px;
   @media (max-width: 767px) {
     flex-direction: column;
     align-items: center;
-    gap: 10px;
+    gap: 0px;
+    top: 0px;
   }
 `;
 export const GoTo = styled.div`
@@ -114,11 +117,12 @@ export const InfoTalk = styled.div`
 
   & label {
     color: ${({ theme }) => theme.colors.text};
-    font-size: 14px;
+    font-size: 13px;
   }
   & span {
     color: ${({ theme }) => theme.colors.primary};
     word-break: break-all;
+    font-size: 11px;
   }
 `;
 export const LinkContact = styled.a`
@@ -135,7 +139,7 @@ export const LinkContact = styled.a`
 export const Form = styled.form`
   display: flex;
   flex-direction: column;
-  justify-content: center;
+
   align-items: center;
   gap: 10px;
 
@@ -150,7 +154,7 @@ export const Form = styled.form`
       animation-duration: 2s;
     }
     &:nth-child(4) {
-      animation-duration: 2.5s;
+      animation-duration: 3s;
     }
 
     @media (min-width: 767px) {
@@ -220,7 +224,6 @@ export const InputMessage = styled.textarea`
   border: 1px solid ${({ theme }) => theme.colors.text};
   border-radius: 10px;
   resize: none;
-  animation: FormTransition forwards 2s;
 
   &:focus,
   &:valid {
