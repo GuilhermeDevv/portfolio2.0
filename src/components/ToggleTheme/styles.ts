@@ -5,7 +5,8 @@ export const Container = styled.div`
   position: absolute;
   bottom: 22px;
   right: 20px;
-  max-width: fit-content;
+  width: fit-content;
+  height: fit-content;
   @media (max-width: 920px) {
     top: 80px;
     right: 20px;
