@@ -21,6 +21,10 @@ export const Content = styled.div`
     min-height: 130vh;
     top: 20px;
   }
+  @media (max-width: 320px) {
+    min-height: 140vh;
+    top: 20px;
+  }
 `;
 export const Info = styled.div`
   max-width: 400px;
