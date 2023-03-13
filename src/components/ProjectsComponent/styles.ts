@@ -44,10 +44,12 @@ export const Info = styled.div`
     font-size: 20px;
     font-weight: bold;
     text-transform: uppercase;
-    max-width: 60%;
+
     color: ${({ theme }) => theme.colors.text};
-    @media (min-width: 428px) {
-      font-size: 29px;
+    & {
+      @media (min-width: 428px) {
+        font-size: 29px;
+      }
     }
   }
   & span {
@@ -113,7 +115,7 @@ export const Project = styled.div`
   @keyframes ProjectSideTransition {
     from {
       opacity: 0;
-      transform: translateY(200%);
+      transform: translateY(300px);
     }
     to {
       transform: translateY(0%);
