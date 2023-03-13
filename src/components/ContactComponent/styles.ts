@@ -138,7 +138,7 @@ export const LinkContact = styled.a`
 export const Form = styled.form`
   display: flex;
   flex-direction: column;
-
+  margin-top: 10px;
   align-items: center;
   gap: 10px;
 
