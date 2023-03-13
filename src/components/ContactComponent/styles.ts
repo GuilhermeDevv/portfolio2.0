@@ -59,7 +59,6 @@ export const InfoTalk = styled.div`
   background-color: ${({ theme }) => theme.colors.secondary};
   position: relative;
   padding-top: 10px;
-  margin-bottom: 20px;
   width: 250px;
   height: 100px;
   display: flex;
