@@ -12,7 +12,7 @@ export const Content = styled.div`
     height: calc(100vh);
   }
   @media (max-width: 320px) {
-    min-height: 100vh + 80px;
+    min-height: 120vh;
   }
 `;
 export const Text = styled.h1`
