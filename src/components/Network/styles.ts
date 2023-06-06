@@ -18,7 +18,7 @@ export const Content = styled.div`
     animation: NetworkTransition 1s forwards;
     & svg,
     path {
-      color: ${({ theme }) => theme.colors.backgroundButton};
+      color: ${({ theme }) => theme.colors.destaque};
     }
   }
   & span:nth-child(2) {
