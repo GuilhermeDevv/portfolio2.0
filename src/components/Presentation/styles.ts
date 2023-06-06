@@ -14,7 +14,7 @@ export const Content = styled.div`
   @media (min-height: 569px) {
     top: 20px;
   }
-  @media (max-width: 960px) {
+  @media (max-width: 1320px) {
     flex-direction: column-reverse;
     justify-content: start;
     align-items: center;
@@ -33,29 +33,39 @@ export const ImWhat = styled.div`
   & h1 {
     animation: ImWhatTransition 1500ms ease-out forwards;
     position: relative;
-    //alinhar h1 com span
     left: -4px;
     font-size: 70px;
     text-transform: uppercase;
     font-weight: bold;
     color: ${({ theme }) => theme.colors.text};
-    @media (max-width: 720px) {
-      font-size: 3.125rem;
+    @media (max-width: 1320px) {
+      font-size: 60px;
+    }
+    @media (max-width: 865px) {
+      font-size: 44px;
+      left: 0px;
+    }
+    @media (max-width: 469px) {
+      font-size: 32px;
+      left: 0px;
+    }
+    @media (max-width: 320px) {
+      font-size: 28px;
       left: 0px;
     }
   }
-  & h3 {
+  & h2 {
     animation: ImWhatTransition 1000ms ease-out forwards;
     letter-spacing: 15px;
     text-transform: uppercase;
     font-weight: bold;
     font-size: 35px;
-    color: ${({ theme }) => theme.colors.backgroundButton};
-    @media (max-width: 720px) {
+    color: ${({ theme }) => theme.colors.text};
+    @media (max-width: 865px) {
       font-size: 16px;
     }
   }
-  @media (max-width: 960px) {
+  @media (max-width: 1320px) {
     @keyframes ImWhatTransition {
       0% {
         opacity: 0;
@@ -68,7 +78,6 @@ export const ImWhat = styled.div`
     }
 
     left: 0px;
-    line-height: 40px;
     text-align: center;
   }
   @media (min-width: 961px) {
