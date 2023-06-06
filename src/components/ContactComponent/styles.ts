@@ -43,10 +43,10 @@ export const GoTo = styled.div`
   @media (max-width: 767px) {
     flex-direction: row;
   }
-  & h4 {
+  & h2 {
     position: relative;
+    color: ${({ theme }) => theme.colors.destaque};
     font-size: 15px;
-    color: white;
     font-weight: bolder;
     text-transform: uppercase;
     padding-bottom: 10px;
@@ -67,9 +67,9 @@ export const InfoTalk = styled.div`
   border-radius: 10px;
   gap: 5px;
   animation: InfoTalkTransition forwards;
-  & & svg,
+  & svg,
   path {
-    color: ${({ theme }) => theme.colors.backgroundButton};
+    color: ${({ theme }) => theme.colors.destaque};
   }
   @media (max-width: 767px) {
     @keyframes InfoTalkTransition {
