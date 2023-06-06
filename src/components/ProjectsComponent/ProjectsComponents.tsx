@@ -1,5 +1,6 @@
 import React from 'react';
-import imgTest from '../../assets/teste.jpg';
+import YourBank from '../../assets/yourBank.jfif';
+import SantosConstrucao from '../../assets/santosConstrucao.jfif';
 import { Button } from '../Button/Button';
 import {
   Container,
@@ -19,29 +20,22 @@ export function ProjectComponents() {
           <h1>Meus últimos projetos</h1>
           <span>
             é apenas uma previa dos projetos feito,veja mais projetos acessando
-            meu GITUB clicando no botão a seguir
+            meu GITHUB clicando no botão a seguir
           </span>
-          <Button text="Github" link="" />
+          <Button text="Github" link="https://github.com/GuilhermeDevv" />
         </Info>
         <Project>
-          <img src={imgTest} />
+          <img src={YourBank} alt="" />
           <ProjectInformation>
-            <Stack>Front-end</Stack>
-            <NameProject>Sistema Financeiro</NameProject>
+            <Stack>Fullstack</Stack>
+            <NameProject>Your Bank</NameProject>
           </ProjectInformation>
         </Project>
         <Project>
-          <img src={imgTest} />
+          <img src={SantosConstrucao} alt="" />
           <ProjectInformation>
-            <Stack>Front-end</Stack>
-            <NameProject>Portfolio</NameProject>
-          </ProjectInformation>
-        </Project>
-        <Project>
-          <img src={imgTest} />
-          <ProjectInformation>
-            <Stack>Front-end/Back-End</Stack>
-            <NameProject>PedeAi</NameProject>
+            <Stack>FrontEnd</Stack>
+            <NameProject>Santos construção</NameProject>
           </ProjectInformation>
         </Project>
       </Content>
