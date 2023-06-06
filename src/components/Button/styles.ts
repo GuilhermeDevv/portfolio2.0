@@ -5,10 +5,8 @@ export const ButtonComponent = styled.button`
 
   background-color: ${({ theme }) => theme.colors.backgroundButton};
   color: black;
-  border-radius: 20px;
-  box-shadow: 0px 1px 7px 1px ${({ theme }) => theme.colors.backgroundButton};
+  border-radius: 14px;
   border: 1px solid transparent;
-
   padding: 10px 25px;
   cursor: pointer;
   transition: 0.3s;
