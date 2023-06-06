@@ -48,7 +48,6 @@ export const Info = styled.div`
     font-size: 20px;
     font-weight: bold;
     text-transform: uppercase;
-
     color: ${({ theme }) => theme.colors.text};
     & {
       @media (min-width: 428px) {
@@ -86,10 +85,9 @@ export const Project = styled.div`
   justify-content: center;
   max-width: 400px;
   max-height: 230px;
-  width: 100%;
   overflow: hidden;
-  height: 100%;
   opacity: 0;
+  border: solid 1px ${({ theme }) => theme.colors.destaque};
   animation: ProjectSideTransition forwards;
   &:nth-child(2) {
     animation-duration: 2s;
@@ -171,10 +169,10 @@ export const ProjectInformation = styled.div`
   }
 `;
 export const Stack = styled.span`
-  color: ${({ theme }) => theme.colors.primary};
+  color: #fff;
   font-size: 16px;
 `;
 export const NameProject = styled.span`
-  color: ${({ theme }) => theme.colors.secondary};
+  color: #808080;
   font-size: 22px;
 `;
