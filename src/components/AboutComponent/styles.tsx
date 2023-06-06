@@ -94,7 +94,7 @@ export const Background = styled.div`
     height: 150%;
     border-radius: 10px;
     background: linear-gradient(
-      ${({ theme }) => theme.colors.backgroundButton} 48%,
+      ${({ theme }) => theme.colors.destaque} 48%,
       rgba(0, 0, 0, 0) 11%
     );
     animation: 6s linear 0s infinite normal none running animateColor;
@@ -189,7 +189,7 @@ export const Card = styled.div`
   & svg,
   path {
     min-height: 30px;
-    color: ${({ theme }) => theme.colors.backgroundButton};
+    color: ${({ theme }) => theme.colors.destaque};
     & {
       @media (max-width: 390px) {
         min-height: 25px;
