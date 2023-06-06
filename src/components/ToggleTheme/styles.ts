@@ -25,6 +25,9 @@ export const Content = styled.div`
 export const Button = styled.button`
   background-color: transparent;
   border: none;
+  & span {
+    display: none;
+  }
   &:hover {
     transform: scale(1.2);
   }
