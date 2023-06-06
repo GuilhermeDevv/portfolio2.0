@@ -7,10 +7,10 @@ export function Presentation() {
   return (
     <Container>
       <Content>
-        <BackgroundSVG src={background} />
+        <BackgroundSVG src={background} alt="me" />
         <ImWhat>
           <h1>Desenvolvedor</h1>
-          <h3>Fullstack</h3>
+          <h2>Fullstack</h2>
         </ImWhat>
       </Content>
     </Container>
