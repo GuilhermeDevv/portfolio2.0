@@ -27,7 +27,7 @@ export const Content = styled.div`
   }
   & svg,
   path {
-    color: ${({ theme }) => theme.colors.textInativity};
+    color: ${({ theme }) => theme.colors.destaque};
   }
   & a.active {
     background-color: ${({ theme }) => theme.colors.backgroundActive};
