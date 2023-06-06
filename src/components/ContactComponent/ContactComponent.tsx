@@ -25,7 +25,7 @@ export function ContactComponent() {
 
         <ContactMe>
           <GoTo>
-            <h4>Entre em contato</h4>
+            <h2>Entre em contato</h2>
             <InfoTalk>
               <MdEmail size={20} />
               <label>Email</label>
