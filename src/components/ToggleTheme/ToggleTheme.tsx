@@ -15,6 +15,7 @@ function ToggleTheme({ toggleThemeFn }: props) {
             setIsMoon(!isMoon);
           }}
         >
+          <span>ToggleTheme</span>
           {isMoon ? <BsMoonFill size={20} /> : <BsSunFill size={20} />}
         </Button>
       </Content>
